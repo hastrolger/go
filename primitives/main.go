@@ -5,23 +5,15 @@ import (
 )
 
 func main() {
-	// constants
-	// it's not possible to infer a value type using ":=" operator
-	const PI = 3.1415
-
-	fmt.Printf("The value of PI is: %v and its type is: %T\n", PI, PI)
-
-	// variables 
-	// if any variable is unused the program cannot run
-	/*
-	inferredVar := false
-	var typeGiven int = 2
-	var justInitialized string 
+	/* 
+		if a variable does not have a type anotation 
+		go allocate memory based on the archiquecture of the OS
 	*/
 
-	// square area
-	const baseCuadrado = 10
-	squareArea := baseCuadrado * baseCuadrado
-	fmt.Println("Area of a square: ", squareArea)
-
+	var iNumber int8 = 255
+	var uNumber uint8 = -4
+	var fNumber float32 = 5.7 // float64
+	var str string = "I'm a string" // only use double quoted
+	var aBool bool = false
+	c := 10 + 8i 
 }
